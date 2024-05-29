@@ -53,7 +53,7 @@ RUN \
     microdnf install -y findutils git yarnpkg
 
 RUN \
-    git clone https://github.com/pterodactyl/panel ./ --depth 1 --branch ${GIT_BRANCH} && \
+    git clone https://github.com/mrquentin/panel ./ --depth 1 --branch ${GIT_BRANCH} && \
     rm .git -rf && \
     chmod -R 755 storage/* bootstrap/cache && \
     find storage -type d > .storage.tmpl && \
